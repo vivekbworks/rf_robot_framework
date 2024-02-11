@@ -1,0 +1,13 @@
+1707655197269	geckodriver	INFO	Listening on 127.0.0.1:51136
+1707655199315	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51137" "-no-remote" "-profile" "C:\\Users\\Vivek\\AppData\\Local\\Temp\\rust_mozprofilel5M8pb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707655201895	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707655202157	Marionette	INFO	Listening on port 51142
+WebDriver BiDi listening on ws://127.0.0.1:51137
+1707655202579	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51137/devtools/browser/6ede27f9-6813-42e7-b63b-0e074132e5f9
+1707655231920	addons.xpi	ERROR	System addon update list error SyntaxError: The URI is malformed.
+1707655283127	Marionette	INFO	Stopped listening on port 51142
+Dynamically enable window occlusion 1

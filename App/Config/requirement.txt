@@ -1,0 +1,9 @@
+# requirements.txt
+
+robotframework
+robotframework-seleniumlibrary
+robotframework-requests
+robotframework-databaselibrary
+pyotp
+python-dotenv
+pykeepass
