@@ -9,7 +9,7 @@ Variables  OrangeHRMLocators.py
 *** Keywords ***
 go to site
     [Arguments]  ${URL}
-    Open Browser  ${URL}
+    Open Browser  ${URL}  Chrome
 
 login to orangeHRM
     Set Log Level    NONE

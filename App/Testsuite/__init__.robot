@@ -2,7 +2,6 @@
 Library    OperatingSystem
 Library    String
 Library    Collections
-Library    YAML
 Suite Setup    set paths
 
 *** Variables ***

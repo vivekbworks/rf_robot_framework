@@ -7,3 +7,4 @@ robotframework-databaselibrary
 pyotp
 python-dotenv
 pykeepass
+PyYAML

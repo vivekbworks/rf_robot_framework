@@ -1,447 +1,400 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.2 on win32)" generated="20240211 19:13:20.710" rpa="false" schemaversion="2">
-<suite id="s1" name="Testsuite" source="D:\code\rf-Robot_framework\App\Testsuite">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-07-10T14:25:47.828973" rpa="false" schemaversion="5">
+<suite id="s1" name="Testsuite" source="C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testsuite">
 <kw name="set paths" type="SETUP">
-<kw name="Split String" library="String">
+<kw name="Split String" owner="String">
+<msg time="2024-07-10T14:25:47.879510" level="INFO">${PATH} = ['C:', 'Users', 'Vivek', 'Automation_code', 'rf_robot_framework', 'App', 'Testsuite']</msg>
 <var>${PATH}</var>
-<arg>D:\\code\\rf-Robot_framework\\App\\Testsuite</arg>
+<arg>C:\\Users\\Vivek\\Automation_code\\rf_robot_framework\\App\\Testsuite</arg>
 <arg>${SEPERATOR}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20240211 19:13:20.830" level="INFO">${PATH} = ['D:', 'code', 'rf-Robot_framework', 'App', 'Testsuite']</msg>
-<status status="PASS" starttime="20240211 19:13:20.829" endtime="20240211 19:13:20.830"/>
+<status status="PASS" start="2024-07-10T14:25:47.878511" elapsed="0.000999"/>
 </kw>
-<kw name="Get Index From List" library="Collections">
+<kw name="Get Index From List" owner="Collections">
+<msg time="2024-07-10T14:25:47.879510" level="INFO">${END} = 5</msg>
 <var>${END}</var>
 <arg>${PATH}</arg>
 <arg>App</arg>
 <doc>Returns the index of the first occurrence of the ``value`` on the list.</doc>
-<msg timestamp="20240211 19:13:20.831" level="INFO">${END} = 3</msg>
-<status status="PASS" starttime="20240211 19:13:20.830" endtime="20240211 19:13:20.831"/>
+<status status="PASS" start="2024-07-10T14:25:47.879510" elapsed="0.000000"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.879510" level="INFO">${NEWEND} = 6</msg>
 <var>${NEWEND}</var>
 <arg>${END}+1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240211 19:13:20.832" level="INFO">${NEWEND} = 4</msg>
-<status status="PASS" starttime="20240211 19:13:20.831" endtime="20240211 19:13:20.832"/>
+<status status="PASS" start="2024-07-10T14:25:47.879510" elapsed="0.000000"/>
 </kw>
-<kw name="Get Slice From List" library="Collections">
+<kw name="Get Slice From List" owner="Collections">
+<msg time="2024-07-10T14:25:47.880535" level="INFO">@{APPPATH} = [ C: | Users | Vivek | Automation_code | rf_robot_framework | App ]</msg>
 <var>@{APPPATH}</var>
 <arg>${PATH}</arg>
 <arg>start=0</arg>
 <arg>end=${NEWEND}</arg>
 <doc>Returns a slice of the given list between ``start`` and ``end`` indexes.</doc>
-<msg timestamp="20240211 19:13:20.833" level="INFO">@{APPPATH} = [ D: | code | rf-Robot_framework | App ]</msg>
-<status status="PASS" starttime="20240211 19:13:20.832" endtime="20240211 19:13:20.833"/>
+<status status="PASS" start="2024-07-10T14:25:47.879510" elapsed="0.001025"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.880535" level="INFO">${APPDIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App</msg>
 <var>${APPDIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.834" level="INFO">${APPDIR} = D:\code\rf-Robot_framework\App</msg>
-<status status="PASS" starttime="20240211 19:13:20.833" endtime="20240211 19:13:20.834"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.880535" level="INFO">${APPDIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App</msg>
 <arg>${APPDIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.835" level="INFO">${APPDIR} = D:\code\rf-Robot_framework\App</msg>
-<status status="PASS" starttime="20240211 19:13:20.834" endtime="20240211 19:13:20.835"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Append To List" library="Collections">
+<kw name="Append To List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Config</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.835" endtime="20240211 19:13:20.836"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.880535" level="INFO">${CONFIG_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Config</msg>
 <var>${CONFIG_DIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.837" level="INFO">${CONFIG_DIR} = D:\code\rf-Robot_framework\App\Config</msg>
-<status status="PASS" starttime="20240211 19:13:20.836" endtime="20240211 19:13:20.837"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.880535" level="INFO">${CONFIG_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Config</msg>
 <arg>${CONFIG_DIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.838" level="INFO">${CONFIG_DIR} = D:\code\rf-Robot_framework\App\Config</msg>
-<status status="PASS" starttime="20240211 19:13:20.837" endtime="20240211 19:13:20.838"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
+<kw name="Remove Values From List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Config</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.838" endtime="20240211 19:13:20.838"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Append To List" library="Collections">
+<kw name="Append To List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Libraries</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.839" endtime="20240211 19:13:20.839"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.000000"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.882067" level="INFO">${LIBRARIES_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Libraries</msg>
 <var>${LIBRARIES_DIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.840" level="INFO">${LIBRARIES_DIR} = D:\code\rf-Robot_framework\App\Libraries</msg>
-<status status="PASS" starttime="20240211 19:13:20.839" endtime="20240211 19:13:20.840"/>
+<status status="PASS" start="2024-07-10T14:25:47.880535" elapsed="0.001532"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.882183" level="INFO">${LIBRARIES_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Libraries</msg>
 <arg>${LIBRARIES_DIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.841" level="INFO">${LIBRARIES_DIR} = D:\code\rf-Robot_framework\App\Libraries</msg>
-<status status="PASS" starttime="20240211 19:13:20.840" endtime="20240211 19:13:20.841"/>
+<status status="PASS" start="2024-07-10T14:25:47.882183" elapsed="0.000000"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
+<kw name="Remove Values From List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Libraries</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.841" endtime="20240211 19:13:20.842"/>
+<status status="PASS" start="2024-07-10T14:25:47.882183" elapsed="0.000000"/>
 </kw>
-<kw name="Append To List" library="Collections">
+<kw name="Append To List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Resources</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.842" endtime="20240211 19:13:20.843"/>
+<status status="PASS" start="2024-07-10T14:25:47.882183" elapsed="0.000000"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.882183" level="INFO">${RESOURCES_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Resources</msg>
 <var>${RESOURCES_DIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.844" level="INFO">${RESOURCES_DIR} = D:\code\rf-Robot_framework\App\Resources</msg>
-<status status="PASS" starttime="20240211 19:13:20.843" endtime="20240211 19:13:20.844"/>
+<status status="PASS" start="2024-07-10T14:25:47.882183" elapsed="0.000000"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.883099" level="INFO">${RESOURCES_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Resources</msg>
 <arg>${RESOURCES_DIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.845" level="INFO">${RESOURCES_DIR} = D:\code\rf-Robot_framework\App\Resources</msg>
-<status status="PASS" starttime="20240211 19:13:20.844" endtime="20240211 19:13:20.845"/>
+<status status="PASS" start="2024-07-10T14:25:47.882183" elapsed="0.000916"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
+<kw name="Remove Values From List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Resources</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.845" endtime="20240211 19:13:20.846"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Append To List" library="Collections">
+<kw name="Append To List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Testdata</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.846" endtime="20240211 19:13:20.847"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.883099" level="INFO">${TESTDATA_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testdata</msg>
 <var>${TESTDATA_DIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.848" level="INFO">${TESTDATA_DIR} = D:\code\rf-Robot_framework\App\Testdata</msg>
-<status status="PASS" starttime="20240211 19:13:20.847" endtime="20240211 19:13:20.848"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.883099" level="INFO">${TESTDATA_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testdata</msg>
 <arg>${TESTDATA_DIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.849" level="INFO">${TESTDATA_DIR} = D:\code\rf-Robot_framework\App\Testdata</msg>
-<status status="PASS" starttime="20240211 19:13:20.848" endtime="20240211 19:13:20.849"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
+<kw name="Remove Values From List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Testdata</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.849" endtime="20240211 19:13:20.850"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Append To List" library="Collections">
+<kw name="Append To List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Testsuite</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.850" endtime="20240211 19:13:20.850"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.000000"/>
 </kw>
-<kw name="Catenate" library="BuiltIn">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.884106" level="INFO">${TESTSUITE_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testsuite</msg>
 <var>${TESTSUITE_DIR}</var>
 <arg>SEPARATOR=${SEPERATOR}</arg>
 <arg>@{APPPATH}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20240211 19:13:20.852" level="INFO">${TESTSUITE_DIR} = D:\code\rf-Robot_framework\App\Testsuite</msg>
-<status status="PASS" starttime="20240211 19:13:20.851" endtime="20240211 19:13:20.852"/>
+<status status="PASS" start="2024-07-10T14:25:47.883099" elapsed="0.001007"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.884106" level="INFO">${TESTSUITE_DIR} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testsuite</msg>
 <arg>${TESTSUITE_DIR}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.853" level="INFO">${TESTSUITE_DIR} = D:\code\rf-Robot_framework\App\Testsuite</msg>
-<status status="PASS" starttime="20240211 19:13:20.852" endtime="20240211 19:13:20.853"/>
+<status status="PASS" start="2024-07-10T14:25:47.884106" elapsed="0.000000"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
+<kw name="Remove Values From List" owner="Collections">
 <arg>${APPPATH}</arg>
 <arg>Testsuite</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20240211 19:13:20.853" endtime="20240211 19:13:20.853"/>
+<status status="PASS" start="2024-07-10T14:25:47.884106" elapsed="0.000000"/>
 </kw>
 <kw name="Load Environment Variables">
-<kw name="Set Variable" library="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.885086" level="INFO">${yaml_file} = C:\Users\Vivek\Automation_code\rf_robot_framework\App\Config\config.yaml</msg>
 <var>${yaml_file}</var>
 <arg>${CONFIG_DIR}${SEPERATOR}config.yaml</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240211 19:13:20.855" level="INFO">${yaml_file} = D:\code\rf-Robot_framework\App\Config\config.yaml</msg>
-<status status="PASS" starttime="20240211 19:13:20.854" endtime="20240211 19:13:20.855"/>
+<status status="PASS" start="2024-07-10T14:25:47.885086" elapsed="0.000000"/>
 </kw>
-<kw name="Get File" library="OperatingSystem">
-<var>${file_content}</var>
-<arg>${yaml_file}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20240211 19:13:20.856" level="INFO" html="true">Getting file '&lt;a href="file://D:\code\rf-Robot_framework\App\Config\config.yaml"&gt;D:\code\rf-Robot_framework\App\Config\config.yaml&lt;/a&gt;'.</msg>
-<msg timestamp="20240211 19:13:20.857" level="INFO">${file_content} = URL: https://www.amazon.in/
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2024-07-10T14:25:47.885086" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\Vivek\Automation_code\rf_robot_framework\App\Config\config.yaml"&gt;C:\Users\Vivek\Automation_code\rf_robot_framework\App\Config\config.yaml&lt;/a&gt;'.</msg>
+<msg time="2024-07-10T14:25:47.886086" level="INFO">${file_content} = URL: https://rahulshettyacademy.com/dropdownsPractise/
 ORANGEHRMSITE: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 USER: admin
 GLOBALWAIT: 10s
 </msg>
-<status status="PASS" starttime="20240211 19:13:20.855" endtime="20240211 19:13:20.857"/>
+<var>${file_content}</var>
+<arg>${yaml_file}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.885086" elapsed="0.001000"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.887085" level="INFO">${parsed_yaml} = {'URL': 'https://rahulshettyacademy.com/dropdownsPractise/', 'ORANGEHRMSITE': 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', 'USER': 'admin', 'GLOBALWAIT': '10s'}</msg>
 <var>${parsed_yaml}</var>
 <arg>yaml.load('''${file_content}''', Loader=yaml.FullLoader)</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240211 19:13:20.859" level="INFO">${parsed_yaml} = {'URL': 'https://www.amazon.in/', 'ORANGEHRMSITE': 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', 'USER': 'admin', 'GLOBALWAIT': '10s'}</msg>
-<status status="PASS" starttime="20240211 19:13:20.857" endtime="20240211 19:13:20.859"/>
+<status status="PASS" start="2024-07-10T14:25:47.886086" elapsed="0.000999"/>
 </kw>
-<kw name="Get Dictionary Keys" library="Collections">
+<kw name="Get Dictionary Keys" owner="Collections">
+<msg time="2024-07-10T14:25:47.887085" level="INFO">${Dict_keys} = ['GLOBALWAIT', 'ORANGEHRMSITE', 'URL', 'USER']</msg>
 <var>${Dict_keys}</var>
 <arg>${parsed_yaml}</arg>
 <doc>Returns keys of the given ``dictionary`` as a list.</doc>
-<msg timestamp="20240211 19:13:20.860" level="INFO">${Dict_keys} = ['GLOBALWAIT', 'ORANGEHRMSITE', 'URL', 'USER']</msg>
-<status status="PASS" starttime="20240211 19:13:20.860" endtime="20240211 19:13:20.860"/>
+<status status="PASS" start="2024-07-10T14:25:47.887085" elapsed="0.000000"/>
 </kw>
-<kw name="Get Length" library="BuiltIn">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.887085" level="INFO">Length is 4.</msg>
+<msg time="2024-07-10T14:25:47.887085" level="INFO">${Dictionary_count} = 4</msg>
 <var>${Dictionary_count}</var>
 <arg>${Dict_keys}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20240211 19:13:20.861" level="INFO">Length is 4</msg>
-<msg timestamp="20240211 19:13:20.861" level="INFO">${Dictionary_count} = 4</msg>
-<status status="PASS" starttime="20240211 19:13:20.861" endtime="20240211 19:13:20.861"/>
+<status status="PASS" start="2024-07-10T14:25:47.887085" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.887085" level="INFO">${keyname} = GLOBALWAIT</msg>
+<var>${keyname}</var>
+<arg>${key}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.887085" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-07-10T14:25:47.888084" level="INFO">${value} = 10s</msg>
+<var>${value}</var>
+<arg>${parsed_yaml}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.888084" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.888084" level="INFO">${GLOBALWAIT} = 10s</msg>
+<arg>${${keyname}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.888084" elapsed="0.001002"/>
+</kw>
+<var name="${key}">GLOBALWAIT</var>
+<status status="PASS" start="2024-07-10T14:25:47.887085" elapsed="0.002001"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.889086" level="INFO">${keyname} = ORANGEHRMSITE</msg>
+<var>${keyname}</var>
+<arg>${key}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.889086" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-07-10T14:25:47.889086" level="INFO">${value} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<var>${value}</var>
+<arg>${parsed_yaml}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.889086" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.890085" level="INFO">${ORANGEHRMSITE} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${${keyname}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.889086" elapsed="0.000999"/>
+</kw>
+<var name="${key}">ORANGEHRMSITE</var>
+<status status="PASS" start="2024-07-10T14:25:47.889086" elapsed="0.002000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.891086" level="INFO">${keyname} = URL</msg>
+<var>${keyname}</var>
+<arg>${key}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.891086" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-07-10T14:25:47.891086" level="INFO">${value} = https://rahulshettyacademy.com/dropdownsPractise/</msg>
+<var>${value}</var>
+<arg>${parsed_yaml}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.891086" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.892600" level="INFO">${URL} = https://rahulshettyacademy.com/dropdownsPractise/</msg>
+<arg>${${keyname}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.891086" elapsed="0.001514"/>
+</kw>
+<var name="${key}">URL</var>
+<status status="PASS" start="2024-07-10T14:25:47.891086" elapsed="0.001514"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.893611" level="INFO">${keyname} = USER</msg>
+<var>${keyname}</var>
+<arg>${key}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.893611" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-07-10T14:25:47.893611" level="INFO">${value} = admin</msg>
+<var>${value}</var>
+<arg>${parsed_yaml}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.893611" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-10T14:25:47.894617" level="INFO">${USER} = admin</msg>
+<arg>${${keyname}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-07-10T14:25:47.893611" elapsed="0.001006"/>
+</kw>
+<var name="${key}">USER</var>
+<status status="PASS" start="2024-07-10T14:25:47.893611" elapsed="0.001006"/>
+</iter>
 <var>${key}</var>
 <value>@{Dict_keys}</value>
-<iter>
-<var name="${key}">GLOBALWAIT</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${keyname}</var>
-<arg>${key}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240211 19:13:20.863" level="INFO">${keyname} = GLOBALWAIT</msg>
-<status status="PASS" starttime="20240211 19:13:20.862" endtime="20240211 19:13:20.863"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${value}</var>
-<arg>${parsed_yaml}</arg>
-<arg>${key}</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20240211 19:13:20.864" level="INFO">${value} = 10s</msg>
-<status status="PASS" starttime="20240211 19:13:20.863" endtime="20240211 19:13:20.864"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${${keyname}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.867" level="INFO">${GLOBALWAIT} = 10s</msg>
-<status status="PASS" starttime="20240211 19:13:20.864" endtime="20240211 19:13:20.867"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:20.862" endtime="20240211 19:13:20.867"/>
-</iter>
-<iter>
-<var name="${key}">ORANGEHRMSITE</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${keyname}</var>
-<arg>${key}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240211 19:13:20.868" level="INFO">${keyname} = ORANGEHRMSITE</msg>
-<status status="PASS" starttime="20240211 19:13:20.868" endtime="20240211 19:13:20.868"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${value}</var>
-<arg>${parsed_yaml}</arg>
-<arg>${key}</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20240211 19:13:20.869" level="INFO">${value} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
-<status status="PASS" starttime="20240211 19:13:20.868" endtime="20240211 19:13:20.869"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${${keyname}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.873" level="INFO">${ORANGEHRMSITE} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
-<status status="PASS" starttime="20240211 19:13:20.869" endtime="20240211 19:13:20.874"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:20.867" endtime="20240211 19:13:20.874"/>
-</iter>
-<iter>
-<var name="${key}">URL</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${keyname}</var>
-<arg>${key}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240211 19:13:20.875" level="INFO">${keyname} = URL</msg>
-<status status="PASS" starttime="20240211 19:13:20.874" endtime="20240211 19:13:20.875"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${value}</var>
-<arg>${parsed_yaml}</arg>
-<arg>${key}</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20240211 19:13:20.876" level="INFO">${value} = https://www.amazon.in/</msg>
-<status status="PASS" starttime="20240211 19:13:20.875" endtime="20240211 19:13:20.876"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${${keyname}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.879" level="INFO">${URL} = https://www.amazon.in/</msg>
-<status status="PASS" starttime="20240211 19:13:20.877" endtime="20240211 19:13:20.879"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:20.874" endtime="20240211 19:13:20.880"/>
-</iter>
-<iter>
-<var name="${key}">USER</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${keyname}</var>
-<arg>${key}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240211 19:13:20.880" level="INFO">${keyname} = USER</msg>
-<status status="PASS" starttime="20240211 19:13:20.880" endtime="20240211 19:13:20.881"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${value}</var>
-<arg>${parsed_yaml}</arg>
-<arg>${key}</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20240211 19:13:20.881" level="INFO">${value} = admin</msg>
-<status status="PASS" starttime="20240211 19:13:20.881" endtime="20240211 19:13:20.881"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${${keyname}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240211 19:13:20.887" level="INFO">${USER} = admin</msg>
-<status status="PASS" starttime="20240211 19:13:20.882" endtime="20240211 19:13:20.887"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:20.880" endtime="20240211 19:13:20.887"/>
-</iter>
-<status status="PASS" starttime="20240211 19:13:20.861" endtime="20240211 19:13:20.887"/>
+<status status="PASS" start="2024-07-10T14:25:47.887085" elapsed="0.007532"/>
 </for>
-<status status="PASS" starttime="20240211 19:13:20.854" endtime="20240211 19:13:20.887"/>
+<status status="PASS" start="2024-07-10T14:25:47.885086" elapsed="0.009531"/>
 </kw>
-<status status="PASS" starttime="20240211 19:13:20.828" endtime="20240211 19:13:20.888"/>
+<status status="PASS" start="2024-07-10T14:25:47.878511" elapsed="0.016106"/>
 </kw>
-<suite id="s1-s1" name="OrangeHRM" source="D:\code\rf-Robot_framework\App\Testsuite\OrangeHRM.robot">
-<test id="s1-s1-t1" name="Login to orange HRM site using credentials stored in keepass file">
-<kw name="go to site" library="OrangeHRMKeywords">
-<arg>${ORANGEHRMSITE}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
+<suite id="s1-s1" name="Assignment" source="C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testsuite\assignment.robot">
+<test id="s1-s1-t1" name="verify source destination and contry option is working" line="8">
+<kw name="go to site" owner="rahulshetty">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-10T14:25:48.264471" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/dropdownsPractise/'.</msg>
 <arg>${URL}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240211 19:13:21.908" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg timestamp="20240211 19:13:21.914" level="INFO">Firefox driver log is always forced to to: D:\code\rf-Robot_framework\App\Results\geckodriver-21.log</msg>
-<status status="PASS" starttime="20240211 19:13:21.908" endtime="20240211 19:13:48.591"/>
+<status status="PASS" start="2024-07-10T14:25:48.264471" elapsed="5.798542"/>
 </kw>
-<status status="PASS" starttime="20240211 19:13:21.907" endtime="20240211 19:13:48.592"/>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-07-10T14:25:48.263471" elapsed="5.799542"/>
 </kw>
-<kw name="login to orangeHRM" library="OrangeHRMKeywords">
-<kw name="Set Log Level" library="BuiltIn">
-<arg>NONE</arg>
-<doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<status status="PASS" starttime="20240211 19:13:48.594" endtime="20240211 19:13:48.595"/>
-</kw>
-<kw name="Get Credentials From Keepass" library="keepassHelper">
-<var>${Cred}</var>
-<arg>${KEEPWD}</arg>
-<arg>${USER}</arg>
-<status status="PASS" starttime="20240211 19:13:48.595" endtime="20240211 19:13:49.320"/>
-</kw>
-<kw name="Set Test Variable" library="BuiltIn">
-<arg>${Cred}</arg>
-<doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" starttime="20240211 19:13:49.320" endtime="20240211 19:13:49.321"/>
-</kw>
-<kw name="Set Log Level" library="BuiltIn">
-<arg>INFO</arg>
-<doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<msg timestamp="20240211 19:13:49.322" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240211 19:13:49.321" endtime="20240211 19:13:49.322"/>
-</kw>
-<kw name="enter username" library="OrangeHRMKeywords">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${username_field}</arg>
-<arg>${GLOBALWAIT}</arg>
+<kw name="select origin and destination" owner="rahulshetty">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${departure}</arg>
+<arg>10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20240211 19:13:49.323" endtime="20240211 19:13:50.098"/>
+<status status="PASS" start="2024-07-10T14:25:54.064032" elapsed="0.221279"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${username_field}</arg>
-<arg>${Cred}[username]</arg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-10T14:25:54.285311" level="INFO">Typing text 'Chennai' into text field '//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']'.</msg>
+<arg>${departure}</arg>
+<arg>Chennai</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240211 19:13:50.100" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
-<status status="PASS" starttime="20240211 19:13:50.099" endtime="20240211 19:13:50.339"/>
+<status status="PASS" start="2024-07-10T14:25:54.285311" elapsed="0.344798"/>
 </kw>
-<status status="PASS" starttime="20240211 19:13:49.322" endtime="20240211 19:13:50.340"/>
-</kw>
-<kw name="enter password" library="OrangeHRMKeywords">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${password_field}</arg>
-<arg>${GLOBALWAIT}</arg>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${destination}</arg>
+<arg>10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20240211 19:13:50.341" endtime="20240211 19:13:50.407"/>
+<status status="PASS" start="2024-07-10T14:25:54.631626" elapsed="0.178998"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${password_field}</arg>
-<arg>${Cred}[password]</arg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-10T14:25:54.810624" level="INFO">Typing text 'BLR' into text field '//input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']'.</msg>
+<arg>${destination}</arg>
+<arg>BLR</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240211 19:13:50.408" level="INFO">Typing text 'admin123' into text field '//input[@name='password']'.</msg>
-<status status="PASS" starttime="20240211 19:13:50.407" endtime="20240211 19:13:50.479"/>
+<status status="PASS" start="2024-07-10T14:25:54.810624" elapsed="0.303728"/>
 </kw>
-<status status="PASS" starttime="20240211 19:13:50.340" endtime="20240211 19:13:50.480"/>
+<status status="PASS" start="2024-07-10T14:25:54.064032" elapsed="1.051313"/>
 </kw>
-<kw name="click on login button" library="OrangeHRMKeywords">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${login_btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240211 19:13:50.482" level="INFO">Clicking element '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240211 19:13:50.481" endtime="20240211 19:13:52.069"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:50.480" endtime="20240211 19:13:52.070"/>
-</kw>
-<status status="PASS" starttime="20240211 19:13:48.593" endtime="20240211 19:13:52.070"/>
-</kw>
-<tag>Login</tag>
-<status status="PASS" starttime="20240211 19:13:21.905" endtime="20240211 19:13:52.071"/>
+<tag>assignment</tag>
+<status status="PASS" start="2024-07-10T14:25:48.263471" elapsed="6.852879"/>
 </test>
-<doc>demo testcases for check login to orange HRM website using crendtials from keepass file</doc>
-<status status="PASS" starttime="20240211 19:13:20.888" endtime="20240211 19:13:52.082"/>
+<status status="PASS" start="2024-07-10T14:25:47.894617" elapsed="7.224727"/>
 </suite>
-<status status="PASS" starttime="20240211 19:13:20.714" endtime="20240211 19:13:52.085"/>
+<status status="PASS" start="2024-07-10T14:25:47.830902" elapsed="7.291953"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Login</stat>
+<stat pass="1" fail="0" skip="0">assignment</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Testsuite">Testsuite</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="OrangeHRM">Testsuite.OrangeHRM</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment">Testsuite.Assignment</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240211 19:13:20.825" level="ERROR">Error in file 'D:\code\rf-Robot_framework\App\Testsuite' on line 5: Importing library 'YAML' failed: ModuleNotFoundError: No module named 'YAML'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\Vivek\AppData\Local\Programs\Python\Python37\Scripts\robot.exe
-  c:\users\vivek\appdata\local\programs\python\python37\python37.zip
-  c:\users\vivek\appdata\local\programs\python\python37\DLLs
-  c:\users\vivek\appdata\local\programs\python\python37\lib
-  c:\users\vivek\appdata\local\programs\python\python37
-  c:\users\vivek\appdata\local\programs\python\python37\lib\site-packages</msg>
+<msg time="2024-07-10T14:25:47.899621" level="ERROR">Error in file 'C:\Users\Vivek\Automation_code\rf_robot_framework\App\Testsuite\assignment.robot' on line 2: Resource file 'C:\Users\Vivek\Automation_code\rf_robot_framework\App\Resources\HomePage\homepageKeywords.robot' does not exist.</msg>
 </errors>
 </robot>
