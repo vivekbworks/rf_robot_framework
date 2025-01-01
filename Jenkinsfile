@@ -45,7 +45,8 @@ pipeline {
 
                     echo "Running tests on URL: ${testURL}"  
                     dir("${env.WORKSPACE}") {  
-                        bat "robot -d results --variable TEST_URL:${testURL} -i ${params.TAGS} tests/"  
+                        bat "robot -d App\\Results --variable KEEPWD:Vml2ZWtAMTIz -i ${params.TAGS} App\\Testsuite"
+ 
                     }  
                 }  
             }  
