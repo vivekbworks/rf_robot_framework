@@ -6,6 +6,7 @@ Test Tags  assignment
 
 *** Test Cases ***
 verify source destination and contry option is working
-    [Tags]  assignment
+    [Tags]  assignment  Regression  Smoke
     rahulshetty.go to site  ${URL}
     select origin and destination
+    select country  India
